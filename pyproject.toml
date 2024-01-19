@@ -1,0 +1,29 @@
+[build-system]
+requires      = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "BLM16-MicroServer"
+version = "1.0.0"
+description = "A lightweight and flexible webserver."
+keywords = ["microserver", "webserver", "lightweight"]
+authors = [{ name = "BLM16", email = "myers.bradley@hotmail.com" }]
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3"
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Environment :: Web Environment",
+    "Intended Audience :: Developers",
+    "Topic :: Internet",
+    "Topic :: Internet :: WWW/HTTP",
+    "Topic :: Internet :: WWW/HTTP :: HTTP Servers",
+    "Topic :: Internet :: WWW/HTTP :: WSGI",
+    "Topic :: Internet :: WWW/HTTP :: WSGI :: Server",
+    "Programming Language :: Python :: 3"
+]
+
+[project.urls]
+Repository = "https://github.com/BLM16/MicroServer.git"
+Issues = "https://github.com/BLM16/MicroServer/issues"
+Changelog = "https://github.com/BLM16/MicroServer/blob/master/CHANGELOG.md"

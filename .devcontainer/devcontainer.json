@@ -1,0 +1,17 @@
+{
+    "name": "BLM16/MicroServer",
+    "image": "mcr.microsoft.com/devcontainers/python:3",
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "python.defaultInterpreterPath": "${workspaceFolder}/venv",
+                "python.terminal.activateEnvInCurrentTerminal": true,
+                "python.terminal.executeInFileDir": true
+            },
+            "extensions": [
+                "ms-python.python"
+            ]
+        }
+    },
+    "onCreateCommand": ".devcontainer/on-create-command.sh"
+}
