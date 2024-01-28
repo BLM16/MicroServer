@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    height: 50px;
+    display: flex;
+    position: sticky;
+    top: 0;
+    flex-flow: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    box-shadow: 0 0 15px 0 #000;
+    padding: 5px 0;
+}
+
+header a {
+    color: #333;
+    text-decoration: none;
+}
+
+header > div {
+    display: flex;
+    gap: 20px;
+}
+
+header > .user-links {
+    justify-content: flex-end;
+}
+
+.container {
+    padding: 0 10vw;
+    width: 100%;
+}
+
+main {
+    padding: 10px 0;
+}

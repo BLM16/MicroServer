@@ -9,7 +9,8 @@
                 "python.terminal.executeInFileDir": true
             },
             "extensions": [
-                "ms-python.python"
+                "ms-python.python",
+                "humao.rest-client"
             ]
         }
     },

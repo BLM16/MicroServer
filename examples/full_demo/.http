@@ -1,0 +1,51 @@
+@host = http://localhost:8080
+
+
+
+### Test the homepage
+# 200 expected
+
+GET {{host}}
+
+
+
+### Test the register functionality
+# 303 expected when username and password valid
+# 422 expected when username or password are not supplied
+# @prompt username The username to test with
+# @prompt password The password to test with
+
+POST {{host}}/register
+Content-Type: application/x-www-form-urlencoded
+
+username={{username}}&password={{password}}
+
+
+
+### Test the logout functionality
+# 302 expected when user was logged in
+# 204 expected when no user was logged in
+
+GET {{host}}/logout
+
+
+
+### Test the login functionality
+# 303 expected when credentials are valid and user exists
+# 422 expected when username or password are not supplied
+# 401 expected if credentials are supplied but invalid
+# @prompt username The username to test with
+# @prompt password The password to test with
+
+POST {{host}}/login
+Content-Type: application/x-www-form-urlencoded
+
+username={{username}}&password={{password}}
+
+
+
+### Test the profile page
+# 200 expected when user is logged in
+# 401 expected when no user is loged in
+
+GET {{host}}/profile

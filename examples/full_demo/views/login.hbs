@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | MicroServer Example</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+    {{> header}}
+
+    <main>
+        <div class="container">
+            <form action="/login" method="post">
+                <input type="text" name="username" placeholder="Username">
+                <input type="password" name="password" id="password">
+                <input type="submit" value="Register">
+            </form>
+        </div>
+    </main>
+</body>
+</html>

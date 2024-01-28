@@ -1,0 +1,14 @@
+<header class="container">
+    <div class="brand">
+        <h1><a href="/">MicroServer</a></h1>
+    </div>
+    <div class="user-links">
+        {{#if user}}
+            <a href="profile">Profile</a>
+            <a href="logout">Logout</a>
+        {{else}}
+            <a href="login">Login</a>
+            <a href="register">Register</a>
+        {{/if}}
+    </div>
+</header>
